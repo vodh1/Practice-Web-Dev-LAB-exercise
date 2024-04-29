@@ -22,7 +22,7 @@ export class ListView {
             <input type="checkbox"> ${item} 
           </div>
           <button class="remove-btn" data-index="${index}">
-						<img class="remove-btn" src="assets/icons/trash.svg" alt="Remove">
+						<img class="remove-btn" src="src/assets/icons/trash.svg" alt="Remove" data-index="${index}">
 					</button>
         </li>
     `
