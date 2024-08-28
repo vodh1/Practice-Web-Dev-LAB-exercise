@@ -1,0 +1,89 @@
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+}
+
+nav {
+	background-color: black;
+	padding: 8px 12px;
+}
+
+nav .title {
+	color: white;
+}
+
+.add-container {
+	display: flex;
+	padding: 18px 12px;
+	gap: 5px;
+	height: 40px;
+}
+
+.input-box {
+	width: 100%;
+	border-radius: 8px;
+	border: 1px grey solid;
+	background-color: #f3f4f6;
+	padding: 8px 12px;
+}
+
+.add-btn {
+	background-color: black;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	cursor: pointer;
+	transition: all 0.125s ease-in;
+}
+
+.add-btn:disabled {
+	background-color: #c9c9c9;
+	cursor: not-allowed;
+}
+
+.list-container ul {
+	list-style: none;
+	padding: 0 12px;
+}
+
+.list-container ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f3f4f6;
+	padding: 18px 16px;
+	border-radius: 8px;
+	margin-bottom: 8px;
+	transition: all 0.125s ease-in;
+}
+
+.list-container ul li:hover {
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+	transform: translate(0px, -5px);
+}
+
+button.remove-btn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	background-color: transparent;
+	transition: all 0.125s ease-in;
+}
+
+button.remove-btn:hover {
+	background-color: #b0b0b0;
+}
+
+li div input[type='checkbox'] {
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+	.main-container {
+		margin: 0 auto;
+		max-width: 980px;
+	}
+}
